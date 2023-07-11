@@ -1,6 +1,6 @@
 const express = require('express');
 const { appListen, DB_connection } = require('./lib/helper');
-const { logger } = require('./logger');
+const { logger } = require('./lib/middlewares/logger');
 const router_book = require('./modules/book/routes');
 
 require('dotenv').config();
