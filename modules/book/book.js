@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const { Schema } = mongoose
 const BookSchema = new Schema({
-    id: { type: String, required: true },
+    id: { type: String, required: false },
     title: { type: String, required: true },
     writer: { type: String, required: true },
     pusblishedDate: { type: Date, required: true, default: Date.now() },
