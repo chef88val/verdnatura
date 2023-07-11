@@ -23,7 +23,7 @@ function run() {
     //Definición de las rutas disponibles
     app.use('/api/book', logger, router_book)
     app.get('/health', logger, (req, res) => {
-        res.status(200)
+        res.send().status(200)
     })
 
     //Pones la aplicación en escucha
